@@ -5,7 +5,7 @@
 Welcome to week 2, gua ucapin selamat udah melewati week1 di phase 2. **gimana menyenangkan bukann ??**
 
 Setelah kalian melewati week1, sudah dipastikan kalian terbiasa dengan siklus phase 2, dimana ada logic challange, soft skills, dan group project.
-Siklus ini akan menempa kalian dan menambah jam terbang untuk ngoding di front end world.
+Siklus ini sudah jelas akan melatih logic skills kalian dan menambah jam terbang untuk ngoding di front end world.
 
 Di week 2 ini kalian akan belajar teknologi front end terbaru dan paling populer saat ini yaitu Reactjs. Karena sudah memahami gimana cara DOM bekerja di week 1, sudah saatnya kita level up untuk menggunakan dan belajar VIRTUAL DOM dimana Fitur ini secara signifikan meningkatkan kinerja aplikasi dengan meminimalkan manipulasi DOM langsung, yang seringkali menjadi bottleneck dalam aplikasi web. React hanya memperbarui bagian-bagian UI yang benar-benar perlu diubah, menghasilkan user experience yang lebih responsif dan mulus. Setelah belajar Virtual DOM dan memahami cara kerjanya kalian lanjut belajar basic concept react, cara set up project react, lifecycle , hooks yang sering dipakai dan routing untuk komunikasi antar page.
 
