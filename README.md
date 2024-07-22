@@ -1,7 +1,4 @@
 # Week2-Reactjs
-![image](https://github.com/user-attachments/assets/bbcf7749-9ea0-4985-8b04-595d6cea169f)
-
-
 Welcome to week 2, gua ucapin selamat udah melewati week1 di phase 2. **gimana menyenangkan bukann ??**
 
 Setelah kalian melewati week1, sudah dipastikan kalian terbiasa dengan siklus phase 2, dimana ada logic challange, soft skills, dan group project.
