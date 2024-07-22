@@ -16,11 +16,18 @@ Setelah belajar Virtual DOM dan memahami cara kerjanya kalian lanjut belajar bas
 
 React JS adalah sebuah library JavaScript yang populer untuk membangun User Interface (UI) dalam aplikasi web modern. Dikembangkan oleh Facebook, React telah menjadi pilihan utama bagi banyak programmer karena pendekatan komponennya yang efisien dan fleksibel. React memungkinkan kalian untuk memecah UI menjadi komponen-komponen kecil yang dapat digunakan kembali, membuatnya lebih mudah untuk menghandle code dalam project-project besar.
 
+
+![image](https://github.com/user-attachments/assets/2bb74020-39e7-42ed-814d-852450fb10d7)
+
 Dibandingkan dengan jQuery, sebuah library JavaScript yang lebih tua dan lebih sederhana, React menawarkan pendekatan yang lebih modern dan terstruktur dalam pengembangan web. Sementara jQuery berfokus pada manipulasi DOM langsung dan memberikan solusi cepat untuk tugas-tugas sederhana, React lebih cocok untuk membangun aplikasi web yang kompleks dan berskala besar. React mendorong kalian untuk berpikir dalam kerangka komponen dan state, yang membuatnya lebih mudah untuk mengelola data dan logika aplikasi yang rumit.
 
 React juga memiliki ekosistem yang kaya dengan berbagai tools dan libraries pendukung, seperti Redux untuk manajemen state dan React Router untuk navigasi. Ini memungkinkan kalian untuk dengan mudah memperluas fungsionalitas aplikasi mereka. Selain itu, dengan React Native, kalian dapat menggunakan React untuk membangun aplikasi mobile, memberikan fleksibilitas tambahan yang tidak dimiliki jQuery.
 
 Link Documentation -> https://react.dev/
+
+Kalian bisa langsung deep dive saja ke dokumentasi react untuk pengenalan yang lebih lanjut.
+
+Dan Goodluck untuk mengerjakan study material week 2 🚀
 
 ## Week 2 Study Material
 
