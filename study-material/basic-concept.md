@@ -101,7 +101,7 @@ Dengan pendekatan ini, React mampu memberikan performa yang sangat baik, bahkan 
 
 Pembuktian bahwa kita menggunakan virtual dom adalah index.html yang ada di folder public. browser hanya membaca dom dari `<div id="root"></div>` , sedangkan kita memanipulasi content nya di virtual dom menggunakan JSX.
 
-kalian bisa cek folder src/index.js dimana react render semua contect JSX ke dalam DOM id root dalam html.
+kalian bisa cek folder src/index.js dimana react render semua content JSX ke dalam DOM id root dalam html.
 
 ```js
 const root = ReactDOM.createRoot(document.getElementById('root'));
