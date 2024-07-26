@@ -207,7 +207,7 @@ inilah flow komponen yang akan kita buat:
 
 Saat nya install modul React Icons untuk menggunakan salah satu icon Delete agar tampilan terlihat bagus.
 
-jalankan command : `npm install react-icons --save` 
+jalankan command : `npm install react-icons --save` or `yarn add react-icons --save`
 
 Setelah itu kita akan mulai dari komponen paling kecil yaitu `TodoItem`.
 
@@ -344,6 +344,247 @@ export default App;
 ### Show Case Test
 
 ![image](https://github.com/user-attachments/assets/a80d9ed3-2c5c-4f54-9db1-0dfe38daab93)
+
+Kalian bisa testing fitur addTask dan melihat hasil task tersebut di tampilkan dengen component todoItem.
+Selanjutnya kita akan menyelesaikan project ini dengan fitur completed dan delete task.
+
+## Conditional Rendering
+
+React conditional rendering adalah teknik untuk menampilkan komponen atau elemen tertentu berdasarkan kondisi tertentu. Dalam React, Kalian dapat menggunakan pernyataan kondisional seperti `if`, `else`, dan operator logika seperti `&&` atau `? :` untuk menentukan apakah suatu bagian dari UI harus dirender atau tidak, tergantung pada nilai state atau props. Ini memungkinkan Kalian untuk membuat UI yang dinamis dan responsif berdasarkan berbagai kondisi.
+
+### Contoh Conditional Rendering:
+
+Berikut adalah contoh sederhana menggunakan conditional rendering dengan pernyataan `if` dan operator `? :`.
+
+**Contoh dengan pernyataan `if`:**
+
+```javascript
+function UserGreeting(props) {
+  return <h1>Welcome back!</h1>;
+}
+
+function GuestGreeting(props) {
+  return <h1>Please sign up.</h1>;
+}
+
+function Greeting(props) {
+  const isLoggedIn = props.isLoggedIn;
+  if (isLoggedIn) {
+    return <UserGreeting />;
+  }
+  return <GuestGreeting />;
+}
+
+function App() {
+  return (
+    <div>
+      <Greeting isLoggedIn={true} />
+    </div>
+  );
+}
+
+export default App;
+```
+
+**Contoh dengan operator `? :`:**
+
+```javascript
+function Greeting(props) {
+  const isLoggedIn = props.isLoggedIn;
+  return (
+    <div>
+      {isLoggedIn ? <h1>Welcome back!</h1> : <h1>Please sign up.</h1>}
+    </div>
+  );
+}
+
+function App() {
+  return (
+    <div>
+      <Greeting isLoggedIn={true} />
+    </div>
+  );
+}
+
+export default App;
+```
+
+### Penjelasan:
+
+1. **Pernyataan `if`**:
+   - Pada contoh pertama, komponen `Greeting` menggunakan pernyataan `if` untuk menentukan apakah akan merender `UserGreeting` atau `GuestGreeting` berdasarkan nilai `isLoggedIn` yang diterima dari props.
+
+2. **Operator `? :`**:
+   - Pada contoh kedua, komponen `Greeting` menggunakan operator ternary `? :` untuk melakukan conditional rendering dalam satu baris kode. Jika `isLoggedIn` bernilai `true`, akan merender pesan "Welcome back!", jika tidak, akan merender pesan "Please sign up.".
+
+Dengan conditional rendering, Kalian dapat membuat aplikasi React yang lebih fleksibel dan dinamis, memungkinkan UI untuk beradaptasi dengan berbagai kondisi dan memberikan pengalaman pengguna yang lebih baik.
+
+
+### Todolist finishing feature
+
+Saatnya menyelesaikan fitur tersisa dari todolist, dimana kita akan membuat checkbox untuk update complete task dan delete task ketika klik icon button trash.
+
+masukan toggleTask dan deleteTask function sebaagai props di TodoList.
+
+App.js
+```JSX
+import { useState } from 'react';
+import './App.css';
+import AddTask from './components/AddTask.jsx';
+import TodoList from './components/TodoList.jsx';
+
+function App() {
+  const [tasks, setTasks] = useState([]);
+
+  const addTask = (task) => {
+    console.log(task)
+    setTasks([...tasks, { id: Date.now(), text: task, completed: false, date: new Date() }]);
+  };
+
+  const toggleTask = (id) => {
+    setTasks(tasks.map(task => 
+      task.id === id ? { ...task, completed: !task.completed } : task
+    ));
+  };
+
+  const deleteTask = (id) => {
+    setTasks(tasks.filter(task => task.id !== id));
+  };
+
+  return (
+    <div className="App">
+      <h1 style={{textAlign: 'center', color: '#43B2E2'}}>RPN Todo List</h1>
+      <AddTask onAdd={addTask} />
+      <TodoList tasks={tasks} onToggle={toggleTask} onDelete={deleteTask}/>
+    </div>
+  );
+}
+
+export default App;
+```
+
+Setelah itu di TodoList kalian juga harus melempar propsnya lagi ke child component `TodoItem`.
+
+components/TodoList.jsx
+```JSX
+import React from 'react';
+import TodoItem from './TodoItem';
+
+function TodoList({ tasks, onToggle, onDelete }) {
+  return (
+    <div className="todo-list">
+      {tasks.map(task => (
+        <TodoItem
+          key={task.id}
+          task={task}
+          onToggle={onToggle}
+          onDelete={onDelete}
+        />
+      ))}
+    </div>
+  );
+}
+
+export default TodoList;
+```
+
+Terakhir kita akan membuat checkbox dengan onChange event enggunakan onToggle. Dan memasukan onDelete function ke button di class todo-right.
+
+components/TodoItem.jsx
+```JSX
+import React from 'react';
+import { MdDelete } from "react-icons/md";
+
+function TodoItem({ task, onToggle, onDelete  }) {
+  return (
+    <div className="todo-item">
+      <div id="todo-left">
+        <label class="checkbox-container">
+            <input
+                type="checkbox"
+                checked={task.completed}
+                onChange={() => onToggle(task.id)}
+                id='checkbox'
+            />
+            <span class="checkmark"></span>
+        </label>
+
+        <div id="todo-content">
+            {
+              task.completed ? (
+                <span style={{textDecoration: 'line-through'}}>
+                {task.text}
+                </span>
+              ) : (
+                <span>
+                  {task.text}
+                </span>
+              )
+            }
+            <span className="date">{task.date.toLocaleString()}</span>
+        </div>
+      </div>
+      
+      <div id='todo-right'>
+        <button id='d' onClick={() => onDelete(task.id)}><MdDelete /></button>
+      </div>
+    </div>
+  );
+}
+
+export default TodoItem;
+```
+
+Disini kita juga memakai conditional rendering pada task.text dimana ketika task itu sudah selesai maka text yang akan direndering adalah line-through text.
+
+```JSX
+<div id="todo-content">
+            {
+              task.completed ? (
+                <span style={{textDecoration: 'line-through'}}>
+                {task.text}
+                </span>
+              ) : (
+                <span>
+                  {task.text}
+                </span>
+              )
+            }
+            <span className="date">{task.date.toLocaleString()}</span>
+</div>
+```
+
+### Testing
+
+https://github.com/user-attachments/assets/e241ee06-1a6f-4c4f-a39d-1eb903ddadc8
+
+
+### Refactor, style conditional rendering
+
+Kita akan improve cara conditional rendering di style react, kalian bisa memalukan seperti ini :
+
+```JSX
+<div id="todo-content">
+          <span style={{ textDecoration: task.completed ? 'line-through' : 'none' }}>
+                {task.text}
+          </span>
+          <span className="date">{task.date.toLocaleString()}</span>
+</div>
+```
+
+Jadi conditional rendering ini tidak terbatas hanya untuk render component di JSX saja, tapi kalian juga bisa melakukannya lewat styling react.
+dan masih banyak lagi kombinasi kondisi-kondisi ini, seiring kalian menggunakan react pasti akan mengetahuinya nanti.
+
+## CLOSING
+
+Kita sudah selesai memepelajari fundamental dalam pembuatan component di react, setelah ini kalian akan belajar lifecycle dalam react menggunakan useEffect hook.
+
+Push react-todo ini repo week2, karena react-todo ini masih dipakai untuk materi selanjutnya.
+
+dan jangan lupa selalu explore dokumentasi reactjs.
+
+
+
 
 
 
