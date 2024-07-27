@@ -296,6 +296,8 @@ export default App;
 
 mungkin kalian bingung kenapa harus ada `if(tasks.length != 0)` di store process, karna pada dasarnya useEffect ini berjalan asynchronous atau berbarengan. Jika kalian tidak mengecek logic task.length 0 atau tidak maka otomatis consume process akan broke karena setiap awal render kita selalu store `[]` array kosong di localstorage.
 
+dan bisa kalian lihat betapa mudahnya kita untuk menambahkan previousTask kedalam state sebelum react render componentnya (mounting). Jadi setelah contentnya ready di show browser data state kita sudah terupdate dengan sync yang ada di localstorage.
+
 saat nya testing fitur ini di react-todo project.
 
 https://github.com/user-attachments/assets/a1ba28fe-7a20-4b12-ba09-ae708506f41d
