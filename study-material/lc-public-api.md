@@ -37,3 +37,10 @@ Explore code gua buat membantu belajar kalian di reactjs.
 ![image](https://github.com/user-attachments/assets/319ca95e-1a2e-41d8-8e48-b815ab2678fa)
 
 ![image](https://github.com/user-attachments/assets/fc3ab883-834d-4d95-8dad-7a23c9da7d12)
+
+
+## After Finish Task
+
+Setelah selesai dengan tugas ini, kalian bisa lanjut next part untuk mengetahui apa itu react router.
+
+Next Part -> [React Router](https://github.com/RPN-Phase-2/Week2-Reactjs/blob/main/study-material/react-router.md)
