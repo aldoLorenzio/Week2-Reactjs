@@ -10,6 +10,8 @@ LIST PUBLIC API : [https://github.com/public-api-lists/public-api-lists?tab=read
 
 css layout wajib memakai flexbox
 
+website wajib di deploy menggunakan vercel
+
 Kreasi apapun diterima disini, jadi buat se kreatif mungkin react project versi kalian. yang paling dinilai adalah tampilan UI websitenya dan banyaknya fitur frontend yang kalian buat.
 
 poin plus:
