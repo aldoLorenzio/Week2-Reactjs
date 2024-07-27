@@ -308,6 +308,11 @@ saat nya testing fitur ini di react-todo project.
 https://github.com/user-attachments/assets/a1ba28fe-7a20-4b12-ba09-ae708506f41d
 
 
+Selanjutnya kalian akan mengerjakan logic challange pertama di reacjt js.
+
+Next Part -> [Logic Challange : React Public API](https://github.com/RPN-Phase-2/Week2-Reactjs/blob/main/study-material/lc-public-api.md)
+
+
 
 
 
