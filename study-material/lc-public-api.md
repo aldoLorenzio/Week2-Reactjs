@@ -22,9 +22,11 @@ poin plus:
 
 ## Material Project Support
 
-Gua juga nyediain material project buat kalian belajar gimana cara handle multiple component dan mutil call API di reactjs.
+Gua juga nyediain material project buat kalian belajar gimana cara handle multiple component dan mutil call public API di reactjs.
 
 Kalian bisa cobain project pokemon-collection yang ada di folder `project-material` di repo ini.
+
+project ini menggunakan public API dari https://pokeapi.co/
 
 silahkan extract zip nya dan install module nya `npm install or yarn install`.
 
