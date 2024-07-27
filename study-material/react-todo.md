@@ -584,6 +584,8 @@ Push react-todo ini repo week2, karena react-todo ini masih dipakai untuk materi
 dan jangan lupa selalu explore dokumentasi reactjs.
 
 
+Next Part -> [React Lifecycle Hook](https://github.com/RPN-Phase-2/Week2-Reactjs/blob/main/study-material/lifecycle-hooks.md)
+
 
 
 
