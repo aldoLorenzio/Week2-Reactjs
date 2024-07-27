@@ -28,4 +28,9 @@ Dan Goodluck untuk mengerjakan study material week 2 🚀
 
 ## Week 2 Study Material
 
+- [Learn React Basic Concepts](https://github.com/RPN-Phase-2/Week2-Reactjs/blob/main/study-material/basic-concept.md)
+- [More React Fundamental : React Todo List](https://github.com/RPN-Phase-2/Week2-Reactjs/blob/main/study-material/react-todo.md)
+- [React Lifecycle Hook](https://github.com/RPN-Phase-2/Week2-Reactjs/blob/main/study-material/lifecycle-hooks.md)
+- [Logic Challange : React Public API](https://github.com/RPN-Phase-2/Week2-Reactjs/blob/main/study-material/lc-public-api.md)
+
 
