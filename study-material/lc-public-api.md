@@ -17,7 +17,7 @@ poin plus:
 - responsive
 - font unique
 - good handling useEffect
-- Detail Page
+- Detail Components (Dialog, modal, or page)
 
 
 ## Material Project Support
