@@ -10,7 +10,7 @@ LIST PUBLIC API : [https://github.com/public-api-lists/public-api-lists?tab=read
 
 css layout wajib memakai flexbox
 
-Kreasi apapun diterima disini, jadi buat se kreatif mungkin react project versi kalian. yang paling dinilai adalah jelas tampilan websitenya.
+Kreasi apapun diterima disini, jadi buat se kreatif mungkin react project versi kalian. yang paling dinilai adalah tampilan UI websitenya dan banyaknya fitur frontend yang kalian buat.
 
 poin plus:
 - animation
