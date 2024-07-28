@@ -363,6 +363,7 @@ bisa kalian lihat url browser `http://localhost:3000/search/query=marvel`, akan 
 
 Materi selanjutnya kalian akan belajar tailwind css , kalau kalian lihat RPN Movie project ini memakai tailwind css untuk styling componentnya.
 
+Saatnya belajar tailwind css di materi selanjutnya -> [Tailwind CSS](https://github.com/RPN-Phase-2/Week2-Reactjs/blob/main/study-material/tailwindcss.md)
 
 
 
