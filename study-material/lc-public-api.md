@@ -1,4 +1,4 @@
-# Logic Challange : React Public API
+# Logic Nolep : React Public API
 
 Bungkus isi dari tugas ini jadi folder (nama sesuaikan project kalian). push di repo week2
 
