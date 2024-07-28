@@ -359,4 +359,10 @@ bisa kalian lihat url browser `http://localhost:3000/search/query=marvel`, akan 
 ![image](https://github.com/user-attachments/assets/dede1a54-6f03-4ba5-a9c8-6e5734e476ff)
 
 
+## Next Part
+
+Materi selanjutnya kalian akan belajar tailwind css , kalau kalian lihat RPN Movie project ini memakai tailwind css untuk styling componentnya.
+
+
+
 
