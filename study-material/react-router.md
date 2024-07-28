@@ -1,5 +1,7 @@
 # React Router
 
+![image](https://github.com/user-attachments/assets/89cfb4c9-a9e3-4887-96c8-71fef80dbf56)
+
 React Router adalah library populer untuk mengelola routing dalam aplikasi React. Routing memungkinkan aplikasi untuk menampilkan konten yang berbeda berdasarkan URL yang diakses oleh user, tanpa perlu memuat ulang seluruh halaman. Ini sangat penting untuk membuat aplikasi single-page (SPA) yang responsif dan memberikan user experience yang mulus.
 
 React Router DOM adalah versi React Router yang dirancang khusus untuk aplikasi web yang berjalan di browser. library ini menyediakan komponen-komponen yang memudahkan kalian untuk menentukan struktur navigasi aplikasi, menangani perubahan URL, dan merender komponen yang sesuai berdasarkan rute yang aktif.
