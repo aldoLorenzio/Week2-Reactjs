@@ -20,6 +20,7 @@ poin plus:
 - font unique
 - good handling useEffect
 - Detail Components (Dialog, modal, or page)
+- Backend Implementation
 
 
 ## Material Project Support
