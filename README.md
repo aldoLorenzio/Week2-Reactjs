@@ -35,4 +35,5 @@ Dan Goodluck untuk mengerjakan study material week 2 🚀
 - [React Router](https://github.com/RPN-Phase-2/Week2-Reactjs/blob/main/study-material/react-router.md) 
 - [Tailwind CSS](https://github.com/RPN-Phase-2/Week2-Reactjs/blob/main/study-material/tailwindcss.md)
 - [Logic Nolep : React Inventory](https://github.com/RPN-Phase-2/Week2-Reactjs/blob/main/study-material/ln-react-inventory.md)
+- [Soft Skills : Time Management](https://github.com/RPN-Phase-2/Week2-Reactjs/blob/main/study-material/sk-time-management.md)
 
