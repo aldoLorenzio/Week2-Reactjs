@@ -34,4 +34,5 @@ Dan Goodluck untuk mengerjakan study material week 2 🚀
 - [Logic Nolep : React Public API](https://github.com/RPN-Phase-2/Week2-Reactjs/blob/main/study-material/lc-public-api.md)
 - [React Router](https://github.com/RPN-Phase-2/Week2-Reactjs/blob/main/study-material/react-router.md) 
 - [Tailwind CSS](https://github.com/RPN-Phase-2/Week2-Reactjs/blob/main/study-material/tailwindcss.md)
+- [Logic Nolep : React Inventory](https://github.com/RPN-Phase-2/Week2-Reactjs/blob/main/study-material/ln-react-inventory.md)
 
