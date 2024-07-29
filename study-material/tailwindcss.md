@@ -288,6 +288,14 @@ export const MovieList = ({ movieData }: { movieData: TMovieData[] }) => {
 
 ```
 
+## Other Resources
+
+Resource lain kalian bisa nonton para expert praktek dengan tailwind css, salah satunya creator ini :
+
+Disini dia build nike website menggunakan tailwind css (from scratch), menurut gua ini lumayan ngebantu banget buat belajar.
+
+https://www.youtube.com/watch?v=tS7upsfuxmo&t=11s
+
 ## Next Part
 
 
