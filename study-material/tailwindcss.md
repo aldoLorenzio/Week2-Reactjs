@@ -298,4 +298,7 @@ https://www.youtube.com/watch?v=tS7upsfuxmo&t=11s
 
 ## Next Part
 
+Selanjutkan kalian akan mengerjakan Logic Nolep IS menggunakan tailwind css
+
+[Logic Nolep : React Inventory](https://github.com/RPN-Phase-2/Week2-Reactjs/blob/main/study-material/ln-react-inventory.md)
 
