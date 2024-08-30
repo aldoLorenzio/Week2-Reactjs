@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import './App.css';
 import AddTask from './components/AddTask';
 import TodoList from './components/TodoList';
@@ -13,13 +13,33 @@ function App() {
 
   const toggleTask = (id) => {
     setTasks(tasks.map(task =>
-      task.id === id ? { ... task, completed: !task.completed} :task
+      task.id === id ? { ...task, completed: !task.completed} :task
     ))
   }
 
   const deleteTask = (id) => {
-    setTasks(tasks.filter(task => task.id !== id))
+    let filtered = tasks.filter(task => task.id !== id)
+    setTasks(filtered)
+
+    //force store
+    localStorage.setItem('tasks' , JSON.stringify(filtered));
   };
+
+  //store process
+  useEffect(() => {
+    if(tasks.length !== 0){
+      localStorage.setItem('tasks', JSON.stringify(tasks));
+    }
+  }, [tasks]);
+
+  // consume process
+  useEffect(() => {
+    let previousTasks = JSON.parse(localStorage.getItem('tasks'))
+
+    setTasks(previousTasks)
+  }, [])
+
+
 
   return (
     <div className="App">
