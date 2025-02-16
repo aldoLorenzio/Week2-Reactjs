@@ -1,13 +1,14 @@
 import './App.css';
-// import Login from './components/Login.jsx'
-// import Register from './components/Register.jsx'
+import Login from './sections/Login.jsx'
+import Register from './sections/Register.jsx'
 
 function App() {
   return (
     <div>
-      
+        <Login />
     </div>
   );
 }
 
 export default App;
+ 
