@@ -14,19 +14,28 @@ const Login = () => {
               <p className="mr-2">don't have account?</p>
               <div>
                 <Button
+                  className="bg-gray-300 py-[4px] px-[15px]"
                   content="Sign up"
-                  bgcolor="bg-gray-300"
-                  px="px-[15px]"
-                  py="py-[4px]"
+                  href="/signUp"
                 />
               </div>
             </div>
             <div>
               <div className="flex justify-center mt-10">
-                <h1 className="font-semibold text-2xl">Inventory System</h1>
+                <h1 className="font-semibold text-3xl">Inventory <span className="text-blue-600">System</span></h1>
               </div>
-              <p className="flex justify-center text-center w-72 mx-auto mt-5 font-semibold">Please enter your detail info to access the app</p>
-              <form action=""></form>
+              <p className="flex text-base justify-center text-center w-80 mx-auto mt-5 font-semibold">Please enter your detail info to access the app</p>
+              <form action="" className="flex flex-col mt-7 gap-y-6">
+                <input className="border border-black p-2 block w-2/3 mx-auto" type="text" placeholder="Email" />
+                <input className="border border-black p-2 block w-2/3 mx-auto" type="password" placeholder="Password" />
+                <div className=" mx-auto">
+                  <Button
+                    className="py bg-blue-500 text-white"
+                    content="Login"
+                  />
+
+                </div>
+              </form>
             </div>
           </div>
         </div>
