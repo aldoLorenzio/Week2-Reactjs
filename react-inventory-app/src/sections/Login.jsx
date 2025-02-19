@@ -14,7 +14,7 @@ const Login = () => {
               <p className="mr-2">don't have account?</p>
               <div>
                 <Button
-                  className="bg-gray-300 py-[4px] px-[15px]"
+                  className="bg-gray-300 hover:bg-gray-400 py-[4px] px-[15px]"
                   content="Sign up"
                   href="/signUp"
                 />
@@ -26,14 +26,13 @@ const Login = () => {
               </div>
               <p className="flex text-base justify-center text-center w-80 mx-auto mt-5 font-semibold">Please enter your detail info to access the app</p>
               <form action="" className="flex flex-col mt-7 gap-y-6">
-                <input className="border border-black p-2 block w-2/3 mx-auto" type="text" placeholder="Email" />
-                <input className="border border-black p-2 block w-2/3 mx-auto" type="password" placeholder="Password" />
-                <div className=" mx-auto">
+                <input className="border border-black p-2 block w-2/3 mx-auto placeholder:pl-3 text-lg placeholder:tracking-wider" type="text" placeholder="Email" />
+                <input className="border border-black p-2 block w-2/3 mx-auto placeholder:pl-3 text-lg placeholder:tracking-wider" type="password" placeholder="Password" />
+                <div className=" mx-auto w-full flex justify-center mt-2">
                   <Button
-                    className="py bg-blue-500 text-white"
+                    className=" bg-blue-500 hover:bg-blue-700 text-white w-2/3 py-1 rounded-lg "
                     content="Login"
                   />
-
                 </div>
               </form>
             </div>
